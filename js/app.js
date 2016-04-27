@@ -22,3 +22,35 @@ function updateQuestionOptions(options)
 
 	//2.Loop through the options array and append them to the UL
 }
+
+$(document).ready(function() {
+	// Questions array
+	var options = [{
+		question: "Czech Republic",
+		answers: ["Ottawa", "Prague", "Vienna", "Windhoek", "Copenhagen"],
+		correct: 2,
+	},
+	{
+		question: "Botswana",
+		answers: ["Gaborone", "N'Jamena", "Riyad", "Muscat", "Cairo"],
+		correct: 1,
+	},
+	{
+		question: "Syria",
+		answers: ["Nairobi", "Buenos Aires", "Damascus", "Abuja", "Abidjan"],
+		correct: 3,
+	},
+	{
+		question: "Mongolia",
+		answers: ["Bratislava", "Vientiane", "Tashkent", "Harare", "Ulan Bator"],
+		correct: 1,
+	},
+	{
+		question: "Indonesia",
+		answers: ["Jakarta", "Phnom Penh", "Lima", "Addis Ababa", "Naypyidaw"],
+		correct: 1,
+	},
+	}]
+
+
+});
