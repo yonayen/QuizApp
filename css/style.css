@@ -14,6 +14,7 @@ body {
 	font-family: 'Amatic SC',
 	 cursive;
 	color: #66CCFF;
+	text-shadow: 2px 1px #B0B0B0;
 }
 
 .container {
@@ -27,12 +28,14 @@ body {
 	padding: 2em 2em;
 	border-radius: 1.5em;
 	box-sizing: border-box;
+	box-shadow: 3px 3px 5px 6px #ccc;
 }
 
 .question-title {
 	margin: 0.7em auto;
 	font-size: 3em;
 	color: #66CCFF;
+	text-shadow: 2px 1px #B0B0B0;
 }
 
 .question-options {
