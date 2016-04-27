@@ -7,6 +7,8 @@ body {
 	background-color: #F7F7F7;
 }
 
+/* --- Title for QuizApp --- */
+
 .title {
 	font-size: 4rem;
 	text-align: center;
@@ -16,6 +18,8 @@ body {
 	color: #66CCFF;
 	text-shadow: 2px 1px #B0B0B0;
 }
+
+/* --- Container that houses Q&As --- */
 
 .container {
 	background-image: url("../images/tools-image.jpg");
@@ -31,12 +35,22 @@ body {
 	box-shadow: 3px 3px 5px 6px #ccc;
 }
 
+/* --- Star System that keeps score of user --- */
+
+.score {
+
+}
+
+/* --- Question --- */
+
 .question-title {
 	margin: 0.7em auto;
 	font-size: 3em;
 	color: #66CCFF;
 	text-shadow: 2px 1px #B0B0B0;
 }
+
+/* --- 5 Answers --- */
 
 .question-options {
 	margin: 1em auto;
