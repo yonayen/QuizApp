@@ -7,9 +7,9 @@ body {
 }
 
 .title {
-	font-size: 3em;
+	font-size: 4rem;
 	text-align: center;
-	margin: 1em auto;
+	margin: 0.5em auto;
 	font-family: 'Amatic SC',
 	 cursive;
 	color: #66CCFF;
@@ -20,7 +20,7 @@ body {
 	background-repeat: repeat-x;
 	width: 600px;
 	height: 600px;
-	margin: 2em auto;
+	margin: 1em auto;
 	font-family: 'Exo 2', sans-serif;
 	text-align: center;
 	padding: 2em 2em;
@@ -29,7 +29,7 @@ body {
 }
 
 .question-title {
-	margin: 1em auto;
+	margin: 0.7em auto;
 	font-size: 3em;
 	color: #66CCFF;
 }
@@ -37,19 +37,23 @@ body {
 .question-options {
 	margin: 1em auto;
 	list-style-type: none;
+	text-transform: uppercase;
 }
 
 .question-options > li {
-	border: 0.5px solid #000;
+	border: 0.5px solid #FFF;
 	margin-bottom: 1.2em;
-	padding: 1.1em 1em;
+	padding: 0.4em 1em;
 	border-radius: 1.3em;
 	margin-right: 1.2em;
 	margin-left: 1.2em;
+	font-size: 1.6rem;
+	background-color: #F7F7F7;
+	color: #B0B0B0;
 }
 
 li:hover {
-	border: 1px solid #B0B0B0;
+	border: 1px solid #F7F7F7;
 	background-color: #66CCFF;
 	color: #FFF;
 }
