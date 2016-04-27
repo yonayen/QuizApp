@@ -37,14 +37,18 @@ body {
 
 /* --- Star System that keeps score of user --- */
 
-.score {
+.score-icons {
+	color: #66CCFF;
+}
 
+.number-score {
+	color: #66CCFF;
 }
 
 /* --- Question --- */
 
 .question-title {
-	margin: 0.7em auto;
+	margin: 0.1em auto;
 	font-size: 3em;
 	color: #66CCFF;
 	text-shadow: 2px 1px #B0B0B0;
