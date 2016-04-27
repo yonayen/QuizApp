@@ -1,3 +1,5 @@
+/* Gray Color- #B0B0B0 */
+
 body {
 	box-sizing: border-box;
 	margin: 0;
@@ -8,7 +10,9 @@ body {
 	font-size: 3em;
 	text-align: center;
 	margin: 1em auto;
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Amatic SC',
+	 cursive;
+	color: #66CCFF;
 }
 
 .container {
@@ -27,6 +31,7 @@ body {
 .question-title {
 	margin: 1em auto;
 	font-size: 3em;
+	color: #66CCFF;
 }
 
 .question-options {
@@ -36,8 +41,15 @@ body {
 
 .question-options > li {
 	border: 0.5px solid #000;
+	margin-bottom: 1.2em;
+	padding: 1.1em 1em;
+	border-radius: 1.3em;
+	margin-right: 1.2em;
+	margin-left: 1.2em;
 }
 
 li:hover {
-	
+	border: 1px solid #B0B0B0;
+	background-color: #66CCFF;
+	color: #FFF;
 }
