@@ -90,7 +90,7 @@ $(document).ready(function() {
     						'<li class="answer">'
     						+questions[currentQuestion].choices[4]+'</li>';
 
-    	$(".question-wrapper").html(newQuestion); // displays new question
+    	$(".question-options").html(newQuestion); // displays new question
     });
 
 
