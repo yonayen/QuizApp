@@ -63,7 +63,9 @@ $(document).ready(function() {
 
     // when answer is submitted by clicking on options
     $(".question-options").on("click", ".answer", function () {
-
+    	currentQuestion++;
+    	nextQuestion();
+    	// --- Add star here empty or full --- //
     });
 
    //  $(".question-options").on("click", "#submit", function () {
