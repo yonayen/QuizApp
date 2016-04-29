@@ -24,33 +24,37 @@ function updateQuestionOptions(options)
 }
 
 $(document).ready(function() {
-	// Questions array
+	// Options variable assigned to array with Questions, List of Answers and Correct Option and Question #.
 	var options = [{
 		question: "Czech Republic",
 		answers: ["Ottawa", "Prague", "Vienna", "Windhoek", "Copenhagen"],
+		questionNumber: 0,
 		correct: 2,
 	},
 	{
 		question: "Botswana",
 		answers: ["Gaborone", "N'Jamena", "Riyad", "Muscat", "Cairo"],
+		questionNumber: 1,
 		correct: 1,
 	},
 	{
 		question: "Syria",
 		answers: ["Nairobi", "Buenos Aires", "Damascus", "Abuja", "Abidjan"],
+		questionNumber: 2,
 		correct: 3,
 	},
 	{
 		question: "Mongolia",
 		answers: ["Bratislava", "Vientiane", "Tashkent", "Harare", "Ulan Bator"],
+		questionNumber: 3,
 		correct: 1,
 	},
 	{
 		question: "Indonesia",
 		answers: ["Jakarta", "Phnom Penh", "Lima", "Addis Ababa", "Naypyidaw"],
+		questionNumber: 4,
 		correct: 1,
-	},
-	}];
+	}]
 
 
 //global variables
