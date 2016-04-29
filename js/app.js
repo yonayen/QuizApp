@@ -57,9 +57,14 @@ $(document).ready(function() {
 	}]
 
 
-//global variables
+	//global variables
     var numberCorrect = 0;
     var currentQuestion = 0;
+
+    // when answer is submitted by clicking on options
+    $(".question-options").on("click", ".answer", function () {
+
+    });
 
    //  $(".question-options").on("click", "#submit", function () {
    //      updateCup();
