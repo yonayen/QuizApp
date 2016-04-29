@@ -1,4 +1,4 @@
-// var options = ["question 1","question 2","question 3"]
+var options = ["question 1","question 2","question 3"]
 
 //Leave this for later
 $(".question-options").on("click","li",function()
