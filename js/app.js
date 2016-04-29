@@ -77,6 +77,7 @@ $(document).ready(function() {
     	currentQuestion = 0; // reset to zero
     	$(".star").css("display", "none"); // all stars are removed
 
+    	// display first question and 5 answer options
     	var newQuestion = '<h1 class="question-title">'+questions[currentQuestion].question+'</h1>'+
     						'<div class="question-options"><li class="answer">'
     						+questions[currentQuestion].choices[0]+'</li>'
