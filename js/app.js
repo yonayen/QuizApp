@@ -57,15 +57,39 @@ $(document).ready(function() {
 	}]
 
 
+
 	//global variables
     var numberCorrect = 0;
     var currentQuestion = 0;
+
 
     // when answer is submitted by clicking on options
     $(".question-options").on("click", ".answer", function () {
     	currentQuestion++;
     	nextQuestion();
     	// --- Add star here empty or full --- //
+    });
+
+
+    // when game is over and option to restart is selected
+    $(".question-options").on("click", ".restart", function () {
+    	numberCorrect = 0; // reset to zero
+    	currentQuestion = 0; // reset to zero
+    	$(".star").css("display", "none"); // all stars are removed
+
+    	var newQuestion = '<h1 class="question-title">'+questions[currentQuestion].question+'</h1>'+
+    						'<div class="question-options"><li class="answer">'
+    						+questions[currentQuestion].choices[0]+'</li>'
+    						'<li class="answer">'
+    						+questions[currentQuestion].choices[1]+'</li>'
+    						'<li class="answer">'
+    						+questions[currentQuestion].choices[2]+'</li>'
+    						'<li class="answer">'
+    						+questions[currentQuestion].choices[3]+'</li>'
+    						'<li class="answer">'
+    						+questions[currentQuestion].choices[4]+'</li>';
+
+    	$(".question-wrapper").html(newQuestion); // displays new question
     });
 
    //  $(".question-options").on("click", "#submit", function () {
