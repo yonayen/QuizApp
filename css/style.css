@@ -79,3 +79,17 @@ li:hover {
 	background-color: #66CCFF;
 	color: #FFF;
 }
+
+
+pre {
+    text-align: left;
+    font-family: "Fira Mono", monospace;
+    font-size: 30px;
+    color: #d0d0d0;
+    position: absolute;
+    top: -30px;
+    left: -50px;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.4;
+}
