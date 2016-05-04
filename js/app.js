@@ -1,3 +1,4 @@
-$(document).ready(function {
-	restartQuiz();
+$(document).ready(function() {
+	restartQuiz()
 });
+
