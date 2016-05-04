@@ -36,7 +36,20 @@ var options = [{
 var numberCorrect = 0;  // initial value
 var currentQuestion = 0; // starts with first question in var options
 
+// answer submitted when option is clicked
 
+$(".question-options").on("click", ".answer", function () {
+
+	if(true == $(this).hasClass("nextQuestion"))
+	{
+		nextQuestion();
+	}
+	else
+	{
+		
+	}
+
+});
 
 
 
