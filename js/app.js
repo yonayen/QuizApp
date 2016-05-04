@@ -31,3 +31,12 @@ var options = [{
 }];
 
 
+// global variables
+
+var numberCorrect = 0;  // initial value
+var currentQuestion = 0; // starts with first question in var options
+
+
+
+
+
