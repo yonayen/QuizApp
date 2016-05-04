@@ -1,7 +1,13 @@
+// window.onload = function () {
+// 	clockDraw.init();
+// };
+
+
+
 $(document).ready(function(){
 	restartQuiz();
 });
-​
+
 // Options variable assigned to array with Questions, List of Answers and Correct Option and Question #.
 var options = [{
 	question: "Czech Republic",
@@ -28,17 +34,14 @@ var options = [{
 	answers: ["Jakarta", "Phnom Penh", "Lima", "Addis Ababa", "Naypyidaw"],
 	correct: 1,
 }];
-​
-​
-​
+
 //global variables
 var numberCorrect = 0;
 var currentQuestion = 0;
-​
-​
+
 // when answer is submitted by clicking on options
 $(".question-options").on("click", ".answer", function () {
-​
+
 	if(true == $(this).hasClass("nextQuestion"))
 	{
 		nextQuestion();
@@ -59,29 +62,28 @@ $(".question-options").on("click", ".answer", function () {
     		// updateQuestionTitle("Incorrect! The answer is " + options[currentQuestion].answers[ options[currentQuestion].correct ]);
     		updateQuestionTitle("Incorrect! The answer is:");
     	}
-​
+
     	$(".answer-incorrect").remove();
-​
+
     	$(".answer-correct").addClass("nextQuestion");
-​
+
     	updateScore(numberCorrect,options.length);
     }
 });
-​
-​
+
 function restartQuiz()
 {
 	numberCorrect = 0; // reset to zero
 	currentQuestion = 0; // reset to zero
-​
+
 	$(".score-icons").empty();
 	$(".question-options").empty();
-​
+
 	updateScore(numberCorrect,options.length);
 	updateQuestionTitle(options[currentQuestion].question);
 	updateQuestionOptions(options[currentQuestion].answers, options[currentQuestion].correct);
 }
-​
+
 function rewardStar(correct) {
 	var starClass = 'fa-star-o';
 	if(correct)
@@ -90,17 +92,17 @@ function rewardStar(correct) {
 	}
 	$(".score-icons").append('<i class="fa ' + starClass + '" aria-hidden="true"></i>');
 }
-​
+
 function updateScore(score,max)
 {
 	$(".number-score").html("<p>" + score + " out of " + max + "</p>");
 }
-​
+
 function updateQuestionTitle(title)
 {
 	$(".question-title").text(title);
 }
-​
+
 function updateQuestionOptions(optionsArray,correct)
 {
 	for(var i=0; i<optionsArray.length;i++)
@@ -117,7 +119,7 @@ function updateQuestionOptions(optionsArray,correct)
 		$(".question-options").append('<li class="answer answer-' + correctAnswerClass + '" data-correctanswer="' + correctAnswer + '" >' + optionsArray[i] + '</li>');
 	}
 }
-​
+
 function nextQuestion()
 {
 	currentQuestion++;
