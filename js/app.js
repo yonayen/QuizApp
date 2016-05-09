@@ -118,6 +118,9 @@ function updateQuestionOptions(optionsArray,correct)
 	}
 }
 
+
+// move through the arrays to the next question in sequence 
+
 function nextQuestion()
 {
 	currentQuestion++;
