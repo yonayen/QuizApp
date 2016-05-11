@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	restartQuiz();
+	restartQuiz(); // new quiz launched at pageLoad.
 });
 
 // var options array houses Questions key-value pairs, Answers array and the correct answer]
@@ -119,7 +119,6 @@ function updateQuestionOptions(optionsArray,correct)
 }
 
 
-// move through the arrays to the next question in sequence 
 
 function nextQuestion()
 {
