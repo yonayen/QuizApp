@@ -8,7 +8,7 @@ var options = [];
 
 function loadQuestions() {
 	$.getJSON("questions.json", function (data){
-		options = data.questions
+		options = data.options
 		restartQuiz();
 	});
 }
