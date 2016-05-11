@@ -1,35 +1,17 @@
 $(document).ready(function() {
-	restartQuiz(); // new quiz launched at pageLoad.
+	loadQuestions(); // new quiz launched at pageLoad.
 });
 
 // var options array houses Questions key-value pairs, Answers array and the correct answer]
 
-var options = [{
-	question: "Czech Republic",
-	answers: ["Ottawa", "Prague", "Vienna", "Windhoek", "Copenhagen"],
-	correct: 1,
-},
-{
-	question: "Botswana",
-	answers: ["Gaborone", "N'Jamena", "Riyad", "Muscat", "Cairo"],
-	correct: 0,
-},
-{
-	question: "Syria",
-	answers: ["Nairobi", "Buenos Aires", "Damascus", "Abuja", "Abidjan"],
-	correct: 2,
-},
-{
-	question: "Mongolia",
-	answers: ["Bratislava", "Vientiane", "Tashkent", "Harare", "Ulan Bator"],
-	correct: 4,
-},
-{
-	question: "Indonesia",
-	answers: ["Jakarta", "Phnom Penh", "Lima", "Addis Ababa", "Naypyidaw"],
-	correct: 0,
-}];
+var options = [];
 
+function loadQuestions() {
+	$.getJSON("questions.json", function (data){
+		options = data.questions
+		restartQuiz();
+	});
+}
 
 // global variables
 
