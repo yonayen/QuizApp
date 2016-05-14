@@ -106,9 +106,9 @@ function nextQuestion()
 {
 	currentQuestion++;
 
-	if (currentQuestion) 
+	for (initialValue; variable < finalValue; variable = variable + increment) 
 	{
-		
+
 	}
 	//1. Check if currentQuestion index is still in boundaries for the options array
 	//2. If it is, show the next question, (like the restart quiz, but without reseting current question and score to 0)
