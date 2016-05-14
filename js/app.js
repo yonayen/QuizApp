@@ -102,17 +102,31 @@ function updateQuestionOptions(optionsArray,correct)
 
 
 
+
 function nextQuestion()
 {
 	currentQuestion++;
 
-	for (initialValue; variable < finalValue; variable = variable + increment) 
+	if (currentQuestion < options.length)	
 	{
-
+		showNextQuestion();
+	}
+	else
+	{
+		// tell the final score.
 	}
 	//1. Check if currentQuestion index is still in boundaries for the options array
 	//2. If it is, show the next question, (like the restart quiz, but without reseting current question and score to 0)
 	//3. If it is not, present a way to restart the quiz. e.g., a button with an event listener that calls the restart quiz function.
+}
+
+function showNextQuestion()
+{
+	$(".question-options").empty();
+
+	updateScore(numberCorrect,options.length);
+	updateQuestionTitle(options[currentQuestion].question);
+	updateQuestionOptions(options[currentQuestion].answers, options[currentQuestion].correct);
 }
 
 
