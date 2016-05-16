@@ -107,12 +107,23 @@ function nextQuestion()
 {
 	currentQuestion++;
 
-	if (currentQuestion < options.length)	
+	if (currentQuestion < options.length)
 	{
 		showNextQuestion();
 	}
 	else
 	{
+		showFinalScore();
+
+	}
+}
+
+function showFinalScore()
+{
+	// tell the final score.
+}
+
+
 		// tell the final score.
 		if(true == $(this).data("correctanswer"))
     	{
