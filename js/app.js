@@ -129,8 +129,7 @@ function showFinalScore()
 {
 	$(".question-title").text("GAME OVER!");
 	$(".score-icons").empty();
-	$(".number-score").css({"color": "#F7F7F7", "font-size": "2em", "font-weight": "bold"});
-	$(".answer-correct").text("Next");
+	$(".number-score").css({"color": "#B0B0B0", "font-size": "2em", "font-weight": "bold"});
 
 	$(".question-options").on("click", ".answer", function () {
 		$(".answer-correct").text("Next");
