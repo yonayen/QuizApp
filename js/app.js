@@ -127,7 +127,13 @@ function showNextQuestion()
 
 function showFinalScore()
 {
-	// tell the final score.
+	$(".question-title").text("GAME OVER!");
+	$(".score-icons").empty();
+	$(".answer-correct").text("Next");
+
+	$(".question-options").on("click", ".answer", function () {
+		$(".answer-correct").text("Next");
+	});
 }
 
 	//1. Check if currentQuestion index is still in boundaries for the options array
