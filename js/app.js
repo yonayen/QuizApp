@@ -100,9 +100,6 @@ function updateQuestionOptions(optionsArray,correct)
 	}
 }
 
-
-
-
 function nextQuestion()
 {
 	currentQuestion++;
@@ -123,33 +120,9 @@ function showFinalScore()
 	// tell the final score.
 }
 
-
-		// tell the final score.
-		if(true == $(this).data("correctanswer"))
-    	{
-    	 	// This is how stars are awarded Empty = False; Full = True
-    		rewardStar(true);
-    		updateQuestionTitle("Correct!");
-    		$(".answer-correct").text("Next");
-    		numberCorrect++;
-    	}
-    	else
-    	{
-    		rewardStar(false);
-    		// updateQuestionTitle("Incorrect! The answer is " + options[currentQuestion].answers[ options[currentQuestion].correct ]);
-    		updateQuestionTitle("Incorrect! The answer is:");
-    	}
-
-    	$(".answer-incorrect").remove();
-
-    	$(".answer-correct").addClass("nextQuestion");
-
-    	updateScore(numberCorrect,options.length);
-	}
 	//1. Check if currentQuestion index is still in boundaries for the options array
 	//2. If it is, show the next question, (like the restart quiz, but without reseting current question and score to 0)
 	//3. If it is not, present a way to restart the quiz. e.g., a button with an event listener that calls the restart quiz function.
-}
 
 function showNextQuestion()
 {
