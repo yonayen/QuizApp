@@ -96,6 +96,7 @@ function updateQuestionOptions(optionsArray,correct)
 			correctAnswer = true;
 			correctAnswerClass = "correct";
 		}
+		// ?
 		$(".question-options").append('<li class="answer answer-' + correctAnswerClass + '" data-correctanswer="' + correctAnswer + '" >' + optionsArray[i] + '</li>');
 	}
 }
