@@ -131,8 +131,9 @@ function showFinalScore()
 	$(".score-icons").empty();
 	$(".number-score").css({"color": "#B0B0B0", "font-size": "2em", "font-weight": "bold"});
 
-	$(".question-options").on("click", ".answer", function () {
-		$(".answer-correct").text("Next");
+	$(".question-options").on("click", ".answer", function() {
+		$(".answer-correct").text("Start Again!");
+		loadQuestions();
 	});
 }
 
