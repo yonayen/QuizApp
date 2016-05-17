@@ -22,6 +22,11 @@ var currentQuestion = 0; // starts with first question in var options
 
 $(".question-options").on("click", ".answer", function () {
 
+	if ($(this).hasClass("quizEnd"))
+	{
+		return true;
+	}
+
 	if(true == $(this).hasClass("nextQuestion"))
 	{
 		nextQuestion();
@@ -96,7 +101,6 @@ function updateQuestionOptions(optionsArray,correct)
 			correctAnswer = true;
 			correctAnswerClass = "correct";
 		}
-		// ?
 		$(".question-options").append('<li class="answer answer-' + correctAnswerClass + '" data-correctanswer="' + correctAnswer + '" >' + optionsArray[i] + '</li>');
 	}
 }
@@ -129,10 +133,12 @@ function showFinalScore()
 {
 	$(".question-title").text("GAME OVER!");
 	$(".score-icons").empty();
-	$(".number-score").css({"color": "#B0B0B0", "font-size": "2em", "font-weight": "bold"});
+	$(".number-score").addClass("final-page");
+	$(".answer-correct").text("Start Again!");
+	$(".answer-correct").addClass("quizEnd");
 
-	$(".question-options").on("click", ".answer", function() {
-		$(".answer-correct").text("Start Again!");
+	$(".question-options").one("click", ".answer", function() {
+		$(".number-score").removeClass("final-page");
 		loadQuestions();
 	});
 }
