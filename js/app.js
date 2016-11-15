@@ -145,6 +145,6 @@ function showFinalScore()
 	});
 }
 
-	// 1. Check if currentQuestion index is still in boundaries for the options array
-	// 2. If it is, show the next question, (like the restart quiz, but without reseting current question and score to 0)
-	// 3. If it is not, present a way to restart the quiz. e.g., a button with an event listener that calls the restart quiz function.
+	1. Check if currentQuestion index is still in boundaries for the options array
+	2. If it is, show the next question, (like the restart quiz, but without reseting current question and score to 0)
+	3. If it is not, present a way to restart the quiz. e.g., a button with an event listener that calls the restart quiz function.
